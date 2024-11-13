@@ -6,13 +6,13 @@
 <style>
     * {
        background-color:aliceblue;
-           
-   }
-   p {
-        font-size: 17px;
-        color:darkslateblue;
+       color:darkslateblue;
         text-align:center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    }
+   p {
+        font-size: 17px;
+        
    }
    .div1 {
         background-color: darkblue;
@@ -35,7 +35,11 @@
     <p id="vaihtop">Tämä on ensimmäinen kappale.
         Se ei ole kovin pitkä kappale.
     </p>
-    
+ <script>
+        function värinvaihto () {
+            document.getElementById("vaihtop").style.color = "yellow";
+        }
+    </script>   
 <button type="button" onclick="värinvaihto">Klikkaa minua!</button>
     <br>
     
@@ -105,11 +109,7 @@
 
 <br>
 
-<script>
-    function värinvaihto () {
-        document.getElementById("vaihtop").style.color = "yellow";
-    }
-</script>
+
 
 
 </body>
