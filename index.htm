@@ -28,9 +28,11 @@
 <body>
     <h1>Digitaaliset palvelut ja sovellukset tehtävä!</h1>
     <h2>Tämä on tehty Perustehtävät-kurssia varten</h2>
-    <p>Tämä on ensimmäinen kappale.
+    <p id="vaihtop">Tämä on ensimmäinen kappale.
         Se ei ole kovin pitkä kappale.
     </p>
+    
+<button type="button" onclick="värinvaihto">Klikkaa minua!</button>
     <br>
     
     <h3>Vastaukset kysymyksiin:</h3>
@@ -98,6 +100,13 @@
 </form>
 
 <br>
+
+<script>
+    function värinvaihto () {
+        document.getElementById('vaihtop').style.color = "black";
+    }
+</script>
+
 
 </body>
 </html> 
