@@ -5,8 +5,8 @@
 </head>
 <style>
     * {
-       background-color:aliceblue;
-       color:darkslateblue;
+        background-color:aliceblue;
+        color:darkslateblue;
         text-align:center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
     }
@@ -14,7 +14,7 @@
         font-size: 17px;
         
    }
-   .div1 {
+   #div1 {
         background-color: darkblue;
         text-align: center;
         color: white; 
@@ -25,9 +25,25 @@
    div:hover {
     border-radius: 25px; 
    }
-   .vaihtop {
+   #vaihtop {
         color:darkslateblue;
+        font-size: 18px;
    }
+    ol {
+       display: inline-block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    #totuus {
+        font-size: 20px;
+        background-color: lightblue;
+    }
+    .button {
+        background-color: hotpink;
+        font-size: 20px;
+        text-shadow: 1px 1px darkmagenta;
+        color: indigo;
+    }
 </style>
 <body>
     <h1>Digitaaliset palvelut ja sovellukset tehtävä!</h1>
@@ -37,10 +53,14 @@
     </p>
  <script>
         function varinvaihto() {
-            document.getElementById("vaihtop").style.color = "yellow";
+            document.getElementById("vaihtop").style.color = "darkmagenta";
         }
+        function Truth() {
+            document.getElementById('totuus').innerHTML = "Otus on universumin paras kissa!";
+        }
+         //Using my cat as motivation to code shamelessly
     </script>   
-<button type="button" onclick="varinvaihto()">Klikkaa minua!</button>
+<button type="button" class="button" onclick="varinvaihto()">Klikkaa minua!</button>
     <br>
     
     <h3>Vastaukset kysymyksiin:</h3>
@@ -49,24 +69,38 @@
     <p><b>Mitä tarkoittaa 'case sensitive'?</b></p>
     <p>Case sensitive tarkoittaa, että isot ja pienet kirjaimet tunnistetaan 
     ja niillä on merkitystä mm. salanasanat ovat usein case sensitive.</p>
+
+    <p><b>Mitä eroa on näillä: var, let ja const?</b></p>
+    <p>Var, let ja const eroavat toisistaan siten, että var antaa uudelleen ilmoittaa muuttujan
+        ilman, että sen arvo muuttuu.</p>
+    <p>'Let' ilmoituksella muuttujalla on blockscope ja se on ilmoitettava ennen käyttöä.</P>
+    <p>'Const' muuttujia ei voi uudelleen siirtää.</p>
     <hr>
 
     <p><b>Tässä kuva kissastani, hänen nimensä on Otus</b></p>
     <img src="otuss.jpg" alt="Otus" width="300" 
     <br>
    
+    <p id="totuus">Otus maailman paras kissa.</p>
+    <button type="button" class="button" onclick="Truth()">Truth</button>
+    <br>
+    <br>
+    <hr>
+
     <p>Otuksen lempiherkut ovat:</p>
     <ol>
         <li>Kuivattu broilerinkaula</li>
         <li>Itsy Bitsy kanaherkku</li>
         <li>Prima cat herkkutikku</li>
     </ol>
+<br>
+
     <a href="https://www.salpaus.fi/">Linkki Salpauksen sivulle</a>
     <a href="portfolio.html">Linkki portfolio sivulle</a>
     <br>
     <br>
   
-    <div class="div1">
+    <div id="div1">
           <p>Testailua</p>
    
         </div>
