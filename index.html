@@ -3,6 +3,7 @@
 <head>
 <title>Perustehtävät</title>
 </head>
+
 <style>
     * {
         background-color:aliceblue;
@@ -18,7 +19,7 @@
         background-color: darkblue;
         text-align: center;
         color: white; 
-        border: 2px solid green
+        border: 2px solid green;
         margin: 20px;
         padding: 10px;
    }
@@ -44,24 +45,44 @@
         text-shadow: 1px 1px darkmagenta;
         color: indigo;
     }
+    #tulos {
+        background-color: aquamarine;
+    }
 </style>
 <body>
+
+<script>
+    function varinvaihto() {
+        document.getElementById("vaihtop").style.color = "magenta";
+    }
+    function Truth() {
+        document.getElementById('totuus').innerHTML = "Otus on universumin paras kissa!";
+    }
+      //Using my cat as motivation to code shamelessly
+    function agenappi() {
+        let age = document.getElementById('age').value;
+        let voteable = (age < 18) ? "Alaikäinen": "Täysi-ikäinen";
+        document.getElementById('tulos').innerHTML = "Sinä olet: " + voteable;
+    }
+</script>   
     <h1>Digitaaliset palvelut ja sovellukset tehtävä!</h1>
     <h2>Tämä on tehty Perustehtävät-kurssia varten</h2>
+
+    <p>Kirjoita ikäsi ja paina nappia:</p>
+    <input id="age" value="0" />
+    <button onclick="agenappi()">Testaa</button>
+    <p id="tulos"></p>
+
+
     <p id="vaihtop">Tämä on ensimmäinen kappale.
         Se ei ole kovin pitkä kappale.
     </p>
- <script>
-        function varinvaihto() {
-            document.getElementById("vaihtop").style.color = "darkmagenta";
-        }
-        function Truth() {
-            document.getElementById('totuus').innerHTML = "Otus on universumin paras kissa!";
-        }
-         //Using my cat as motivation to code shamelessly
-    </script>   
+ 
 <button type="button" class="button" onclick="varinvaihto()">Klikkaa minua!</button>
-    <br>
+
+<br>
+<br>
+<hr>
     
     <h3>Vastaukset kysymyksiin:</h3>
     <p><b>Miten tyhjä tagi eroaa muista tageista?</b></p>
@@ -71,10 +92,10 @@
     ja niillä on merkitystä mm. salanasanat ovat usein case sensitive.</p>
 
     <p><b>Mitä eroa on näillä: var, let ja const?</b></p>
-    <p>Var, let ja const eroavat toisistaan siten, että var antaa uudelleen ilmoittaa muuttujan
+    <p>Var, let ja const eroavat toisistaan siten, että 'var' antaa uudelleen ilmoittaa muuttujan
         ilman, että sen arvo muuttuu.</p>
     <p>'Let' ilmoituksella muuttujalla on blockscope ja se on ilmoitettava ennen käyttöä.</P>
-    <p>'Const' muuttujia ei voi uudelleen siirtää.</p>
+    <p>'Const' muuttujia ei voi siirtää.</p>
     <hr>
 
     <p><b>Tässä kuva kissastani, hänen nimensä on Otus</b></p>
@@ -83,9 +104,10 @@
    
     <p id="totuus">Otus maailman paras kissa.</p>
     <button type="button" class="button" onclick="Truth()">Truth</button>
-    <br>
-    <br>
-    <hr>
+
+<br>
+<br>
+<hr>
 
     <p>Otuksen lempiherkut ovat:</p>
     <ol>
@@ -93,6 +115,7 @@
         <li>Itsy Bitsy kanaherkku</li>
         <li>Prima cat herkkutikku</li>
     </ol>
+
 <br>
 
     <a href="https://www.salpaus.fi/">Linkki Salpauksen sivulle</a>
