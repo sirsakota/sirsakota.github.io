@@ -30,7 +30,7 @@
         color:darkslateblue;
         font-size: 18px;
    }
-    ol {
+    ol, ul {
        display: inline-block;
        margin-left: auto;
        margin-right: auto;
@@ -70,7 +70,7 @@
 
     <p id="owl"></p>
     <br>
-    <p id="elukat"></p>
+    <ul id="elukat"></ul>
     
     <p>Kirjoita ikäsi ja paina nappia:</p>
     <input id="age" value="0" />
@@ -107,15 +107,16 @@
         teksti += "<li>" + animals[i] + "!" + "</li>";
         }
         teksti += "</ul>";
-        document.getElementById("elukat").innerHTML = animals;
-    </script>   
-<button type="button" class="button" onclick="varinvaihto()">Klikkaa minua!</button>
-    <br>
+        document.getElementById("elukat").innerHTML = teksti;
+    </script>
+
 <button type="button" class="button" onclick="varinvaihto()">Klikkaa minua!</button>
 
 <br>
 <br>
+<br>
 <hr>
+
     
     <h3>Vastaukset kysymyksiin:</h3>
     <p><b>Miten tyhjä tagi eroaa muista tageista?</b></p>
