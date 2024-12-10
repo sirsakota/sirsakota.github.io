@@ -51,22 +51,12 @@
 </style>
 <body>
 
-<script>
-    function varinvaihto() {
-        document.getElementById("vaihtop").style.color = "magenta";
-    }
-    function Truth() {
-        document.getElementById('totuus').innerHTML = "Otus on universumin paras kissa!";
-    }
-      //Using my cat as motivation to code shamelessly
-    function agenappi() {
-        let age = document.getElementById('age').value;
-        let voteable = (age < 18) ? "Alaikäinen": "Täysi-ikäinen";
-        document.getElementById('tulos').innerHTML = "Sinä olet: " + voteable;
-    }
-</script>   
+
     <h1>Digitaaliset palvelut ja sovellukset tehtävä!</h1>
     <h2>Tämä on tehty Perustehtävät-kurssia varten</h2>
+
+    <p id="demo">Mitä vaan</p>
+    <br>
 
     <p id="owl"></p>
     <br>
@@ -211,4 +201,25 @@
 
 
 </body>
+<script>
+    function varinvaihto() {
+        document.getElementById("vaihtop").style.color = "magenta";
+    }
+    function Truth() {
+        document.getElementById('totuus').innerHTML = "Otus on universumin paras kissa!";
+    }
+      //Using my cat as motivation to code shamelessly
+    function agenappi() {
+        let age = document.getElementById('age').value;
+        let voteable = (age < 18) ? "Alaikäinen": "Täysi-ikäinen";
+        document.getElementById('tulos').innerHTML = "Sinä olet: " + voteable;
+    }
+    let etunimi = " Misa" 
+    let sukunimi = " Käpölä"
+
+    function tervehdys(etunimi, sukunimi) {
+        return "Hei" + etunimi + sukunimi;
+    } 
+    document.getElementById("demo").innerHTML = tervehdys(etunimi, sukunimi);
+</script>   
 </html> 
